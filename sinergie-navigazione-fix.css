@@ -62,7 +62,9 @@
     font-size: .74rem;
     min-height: 44px;
   }
-
+.header .header-cta span {
+    display: none;
+}
   .header .nav-toggle {
     min-width: 44px;
     width: 44px;
