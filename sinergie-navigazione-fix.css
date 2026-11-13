@@ -47,9 +47,31 @@
   .header .nav-toggle { min-width: 43px; width: 43px; padding: 9px 6px; font-size: 0; }
   .header .nav-toggle span { font-size: 19px; line-height: 1; }
 }
+
 @media(max-width:430px) {
- .header .header-in { min-height: 70px; }
- .header .logo img { width: clamp(96px, 27vw, 116px); }
- .header nav#main-nav { max-height: calc(100dvh - 70px); }
+  .header .header-in {
+    min-height: 70px;
+  }
+
+  .header .logo img {
+    width: clamp(108px, 31vw, 124px);
+  }
+
+  .header .header-cta {
+    padding: 9px 8px;
+    font-size: .74rem;
+    min-height: 44px;
+  }
+
+  .header .nav-toggle {
+    min-width: 44px;
+    width: 44px;
+    min-height: 44px;
+  }
+
+  .header nav#main-nav {
+    max-height: calc(100dvh - 70px);
+  }
 }
+
 @media(prefers-reduced-motion:reduce){.header nav#main-nav .services-toggle svg{transition:none}}
